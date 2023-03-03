@@ -95,7 +95,7 @@ function zarla() {
         document.getElementById("btn").style.display = "none";
         setTimeout(function yönlendir(){
             window.location.href = "İkinciOyuncuKazandı.html";
-        },1500);
+        },1200);
     }
     else if(birincioyuncuzar1 + birincioyuncuzar2 > ikincioyuncuzar1 + ikincioyuncuzar2){
         document.getElementById("btn").style.display = "none";
