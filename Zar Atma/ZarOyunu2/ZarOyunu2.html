@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Zar Atma Oyunu 2</title>
+        <meta charset="UTF-8">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #anadiv{
+                width: 100%;
+                height: 100%;
+                display: flex; 
+                justify-content: center; /* Yandan Ortalama */
+                align-items: center; /* Üstten Ortalama */
+                overflow: hidden; /* Fazlalık Gizleme */
+            }
+            #zar {
+                padding: 10px;
+            }
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            #buton{
+                text-align: center;
+            }
+            #btn{
+                background-color: white;
+                border-radius: 10px;
+                width: 150px;
+                height: 80px;
+                font-size: 20px;
+                border:3.5px solid black;
+            }   
+            #oyuncubirzar , #oyuncuikizar{
+                text-align: center;
+                width: 50%;
+            }
+            #çizgi{
+                margin-left: 75px;
+                margin-right: 75px;
+                height: 100%;
+                border:2px solid black;
+            }
+            #ara{
+                float:left;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="anadiv">
+        <div id="oyuncubirzar">
+            <div id="avatar">
+                <img src="png\2289_SkVNQSBGQU1PIDEwMjgtMTIy.jpg" alt="">
+            </div>
+            <h1>Oyuncu 1</h1>
+            <br>
+            <div id="zar">
+                <img id="zar1" src="png\zar 1.png" alt="">
+            </div>
+            <div id="zar">
+                <img id="zar2" src="png\zar 1.png" alt="">
+            </div>
+            <div>
+            Birinci Oyuncu Zarları
+            <br>
+            <span id="birincioyuncu">-</span>
+            </div>
+        </div>
+        <div id="ara">
+            <div id="çizgi">
+            
+            </div>
+            <div id="buton">
+                <button id="btn" onclick="zarla();">Zar At</button>    
+            </div>
+            <div id="çizgi">
+                
+            </div>
+        </div>
+        <div id="oyuncuikizar">
+            <div id="avatar">
+                <img src="png\2289_SkVNQSBGQU1PIDEwMjgtMTE2.jpg" alt="">
+            </div>
+            <h1>Oyuncu 2</h1>
+            <br>
+            <div id="zar">
+                <img id="zar3" src="png\zar 1.png" alt="">
+            </div>
+            <div id="zar">
+                <img id="zar4" src="png\zar 1.png" alt="">
+            </div>
+            İkinci Oyuncu Zarları
+            <br>
+            <span id="ikincioyuncu">-</span>
+        </div>
+    </div>
+        <script type="text/Javascript" language="Javascript" src="js\zarla.js"></script>
+    </body>
+</html>

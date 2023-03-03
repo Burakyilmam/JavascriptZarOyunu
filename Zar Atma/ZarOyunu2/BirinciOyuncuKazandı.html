@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Birinci</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #anadiv{
+                width: 100%;
+                height: 100%;
+            }
+            #anadiv div{
+                float:left;
+            }
+            #birinci{
+                width: 48%;
+                height: 100%;
+                background-color: blue;
+            }
+            #ikinci{
+                width: 48%;
+                height: 100%;
+                background-color: gray;
+            }
+            #ara{
+                width: 4%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                background:linear-gradient(to left, gray,blue);
+            }
+            #ara button{
+                color:black;
+                background-color: white;
+                border-radius: 10px;
+                position: absolute;
+                width: 200%;
+                height: 75px;
+            }
+            #birinci div , #ikinci div{
+                float:none;
+                text-align: center;
+                color: white;
+            }
+            
+            #oyuncu , #kazandı ,#puan ,#kaybetti{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #oyuncu , #kazandı ,#kaybetti{
+                height: 22%;
+            }
+            #puan{
+                height: 56%;
+            }
+            #kutu{
+                padding: 25px;
+                width: 50%;
+                height: 150px;
+                background-color: red;
+                border-radius: 10px;
+            }
+            #kutu h2{
+                margin: 24px;
+            }
+            #kutu span{
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="anadiv">
+            <div id="birinci">
+                <div id="oyuncu">
+                    <h1>1. Oyuncu</h1>
+                </div>
+                <div id="kazandı">
+                    <h1>Kazandı !</h1>
+                </div>
+                <div id="puan">
+                    <div id="kutu">
+                        <h2>Toplam</h2>
+                        <span id="kazanan">12</span>
+                    </div>
+                </div>
+            </div>
+            <div id="ara">
+                <button onclick="tekrardene();">Tekrar Dene</button>
+            </div>
+            <div id="ikinci">
+                <div id="oyuncu">
+                    <h1>2. Oyuncu</h1>
+                </div>
+                <div id="kaybetti">
+                    <h1>Kaybetti !</h1>
+                </div>
+                <div id="puan">
+                    <div id="kutu">
+                        <h2>Toplam</h2>
+                        <span>5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function tekrardene(){
+            window.location.href = "ZarOyunu2.html";
+        }
+    </script>
+</html>
